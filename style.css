@@ -1,4 +1,131 @@
 
-*{
-    background-color: blue;
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100;
+    display: flex;
+    font-size: 16px;
+}
+
+
+.left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex: 0.4;
+    background-image: url(evan-brockett-VPnUiSnXUSE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Ensure proper placement of children */
+}
+.right_side{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.odin_logo {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: norsebold;
+    font-size: 10rem;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 25%; /* Place the bar a quarter way down */
+}
+
+.odin_logo img {
+    height:200px; /* Adjust size of the logo */
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.shoutout{
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 95%;
+}
+.top_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex: 0.4;
+    font-size: 2rem;
+    padding: 50px;
+}
+
+.middle_text{
+    flex: 0.2;
+    padding: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+}
+
+
+.bottom_text{
+    padding: 50px;
+    flex: 0.4;
+    font-size: 1.5rem;
+}
+
+.bottom_text button{
+    border: none;
+    border-radius: 20px;
+    width: 15%;
+    height: 10%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #596D48;
+    cursor: pointer;
+}
+
+
+
+a:visited{
+    color: inherit;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 20px; /* Spacing between rows */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit the width of the form */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form_row {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-between; /* Space out items */
+    gap: 20px; /* Add spacing between inputs */
+}
+
+.form_row span {
+    display: inline-block; /* Make span behave like a block */
+    font-weight: bold; /* Make labels bold */
+    width: 45%; /* Adjust width to share space in the row */
+}
+
+input {
+    width: 100%; /* Input takes full width of its container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
