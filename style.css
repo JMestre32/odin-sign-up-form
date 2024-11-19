@@ -9,9 +9,9 @@
 }
 
 body{
+    /* needed for avoiding white border around the entire website */
     margin: 0;
     padding: 0;
-    height: 100;
     display: flex;
     font-size: 16px;
 }
@@ -20,7 +20,6 @@ body{
 .left_side {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     flex: 0.4;
@@ -28,12 +27,6 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-}
-.right_side{
-    background-color: wheat;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 .odin_logo {
@@ -45,9 +38,8 @@ body{
     font-size: 10rem;
     color: white;
     position: absolute;
-    width: 100%;
-    overflow-wrap: break-word;
     top: 25%; 
+    width: 100%;
 }
 
 .odin_logo span {
@@ -67,6 +59,15 @@ body{
     position: absolute;
     top: 95%;
 }
+
+.right_side{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
 .top_text{
     display: flex;
     justify-content: center;
@@ -121,7 +122,6 @@ a:link{
     width: 100%; 
     max-width: 600px; 
     padding: 30px;
-    border-radius: 10px;
 }
 
 .form_row {
@@ -144,8 +144,8 @@ a:link{
 input {
     width: 100%; 
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid;
+    border-radius: 4px;
     font-size: 1rem;
 }
 
